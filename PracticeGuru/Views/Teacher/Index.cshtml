@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TeacherDb> 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<table class="table">
+    <tr>
+        <th>
+
+        </th>
+         <th>
+
+        </th>
+         <th>
+
+        </th>
+         <th>
+
+        </th>
+    </tr>
+
+@foreach(var obj in Model)
+{ <tr>
+    <td>
+    @obj.TeacherName
+    </td>
+    <td>
+    @obj.TeacherContact
+     </td>
+    <td>
+    @obj.CreatedAt
+     </td>
+    <td>
+    @obj.UpdatedAt
+     </td>
+   </tr>
+}
+
+</table>
